@@ -1,3 +1,21 @@
+//how to fetch different type of attributes by various mathods
+// 1.class 
+
+const tab = document.getElementsByClassName("class_nams");//it can fetch all element with same name of class and tab is work as array here
+const tab = document.querySelector(".tab_name");
+
+// for id
+const tab2 = document.querySelector(".tab_name");
+const tab3 = document.querySelector("[")
+const tab= document.getElementById("example"); 
+
+//by tag name
+const y = x.getElementsByTagName("p");
+const searchTab = document.querySelector("[data-searchweather]");
+
+
+
+
 //how to use reduce in javascript
 
 const users = [
@@ -48,7 +66,7 @@ catch (err) {
 
 
 
-// how to render api data on ui
+// how to render api data on UI
 function renderinformation(data){
       let newPara = document.createElement('p');
       newPara.textContent = `${data?.main?.temp.toFixed(2)}`
@@ -82,3 +100,29 @@ function showPosition(position){
 
 
 
+//how to add ot remove active class
+
+let oldtab = //fetch an attribute 
+oldtab.classList.add("name of active class");
+//this is incss
+// .classname of attribute."name of active class"{
+
+// }
+
+// for remove ?just use "remove" in place of add
+
+
+
+
+
+
+
+
+
+//Link section
+// 1. cdn link to obtain a flag from country instanceof;
+attribute_name.src = `https://flagcdn.com/144x108/${weatherInfo?.sys?.country.toLowerCase()}.png`; 
+// ${weatherInfo?.sys?.country.toLowerCase() ye apne hisaab se dalte rehna
+
+// 2  for weather icoom image 
+//  weatherIcon.src = `http://openweathermap.org/img/w/${weatherInfo?.weather?.[0]?.icon}.png`;  
